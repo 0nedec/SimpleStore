@@ -36,6 +36,11 @@
         <span class = "label label-primary">{{product.price}}</span>
         <br>
         <br>
+        <form method = "post">
+          {% csrf_token%}
+          <input type="submit" value = "Add to Cart" class = "btn btn-success">
+          <input type="hidden" name="obj_id" value={{product.id}}>
+        </form>
         </div>
         {% endfor %}
       </div>
