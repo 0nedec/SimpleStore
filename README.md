@@ -6,9 +6,8 @@ Python**.
 
 
 [Click here to visit the
-course page](https://www.udemy.com/projects-in-django-and-python/)
+course page.](https://www.udemy.com/projects-in-django-and-python/)
 
 
 Thanks for stopping by.
-
 -0nedec
