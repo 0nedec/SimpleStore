@@ -45,7 +45,7 @@
         {% for item in cart_items %}
         <div class = "media">
           <a class = "pull-left" href="#">
-            <img class = "media-object imgscale" src={{item.imglink}}/>
+            <img class = "media-object imgscale" src= {{item.imglink}} />
           </a>
           <div class = "media-body">
             <h4 class = "media-heading">{{item.name}}</h4>
@@ -54,7 +54,7 @@
           </div>
           <form method = "POST" action = "remove/">
             {% csrf_token %}
-            <input type = "hidden" name = "obj_id" value = {{item.id}} />
+            <input type = "hidden" name= "obj_id" value = {{item.id}} />
             <input type="submit" value= "Remove" class = "btn btn-danger pull-right">
           </form>
         </div>
