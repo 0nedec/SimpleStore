@@ -21,7 +21,7 @@ def catalog(request):
   cart = request.session['cart']
   request.session.set_expiry(0)
   store_items = Product.objects.all()
-  ctx = {'store_items': store_items, 'cart_size': len(cart), 'total_price': priceCart(cart)}
+  ctx = {'store_items': store_items, 'cart_size': len(cart), 'total_price': priceCart(cart), 'cart_items': cartItems(cart) }
   return render(request, "catalog.html", ctx)
 
   if request.method == "POST":
